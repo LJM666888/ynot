@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王磊生日快乐 🎂🎉</title>
+    <style>
+        /* 设置背景渐变动画 */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff66b2, #ff9966, #66ccff, #99ff99);
+            background-size: 400% 400%;
+            animation: gradientBackground 10s ease infinite;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* 中央文字效果 */
+        .message {
+            font-size: 4em;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.4), 0 0 30px rgba(255, 255, 255, 0.3);
+            animation: glow 1.5s ease-in-out infinite alternate, colorChange 5s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6); }
+            to { text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8); }
+        }
+
+        @keyframes colorChange {
+            0% { color: #ffcc00; }
+            33% { color: #ff6699; }
+            66% { color: #66ccff; }
+            100% { color: #99ff99; }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        王磊生日快乐 🎂🎉
+    </div>
+</body>
+</html>
